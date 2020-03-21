@@ -1,0 +1,978 @@
+{
+	"info": {
+		"_postman_id": "5ba0d6b3-577f-4a0c-846c-a839c48636d8",
+		"name": "manualSrum ",
+		"description": "httpcalls for testing manualScrum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PROJECT Create Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/ProjectController?task=createNewProject&title=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"ProjectController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "createNewProject"
+						},
+						{
+							"key": "title",
+							"value": ""
+						}
+					]
+				},
+				"description": "Getting all projects"
+			},
+			"response": []
+		},
+		{
+			"name": "PROJECT Get All Projects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/ProjectController?task=getAllProjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"ProjectController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getAllProjects"
+						}
+					]
+				},
+				"description": "Creating project with title"
+			},
+			"response": []
+		},
+		{
+			"name": "PROJECT Update project title",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/ProjectController?task=updateProjectTitleById&id=4&title=Third project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"ProjectController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "updateProjectTitleById"
+						},
+						{
+							"key": "id",
+							"value": "4"
+						},
+						{
+							"key": "title",
+							"value": "Third project"
+						}
+					]
+				},
+				"description": "Update project title"
+			},
+			"response": []
+		},
+		{
+			"name": "PROJECT get Project By Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/ProjectController?task=getProjectById&id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"ProjectController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getProjectById"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PROJECT Delete Project by Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/ProjectController?task=deleteProjectById&id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"ProjectController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "deleteProjectById"
+						},
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PROJECT get Project statistics By Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/ProjectController?task=getProjectStatisticsById&id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"ProjectController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getProjectStatisticsById"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PROJECT validate Project By Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/ProjectController?task=validateProjectById&id=12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"ProjectController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "validateProjectById"
+						},
+						{
+							"key": "id",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ASS Get Assignments By Employee Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/AssignmentController?task=getAllAssignmentByEmployeeId&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"AssignmentController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getAllAssignmentByEmployeeId"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ASS Create Assignment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/AssignmentController?task=createAssignment&taskId=1&employeeId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"AssignmentController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "createAssignment"
+						},
+						{
+							"key": "taskId",
+							"value": "1"
+						},
+						{
+							"key": "employeeId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ASS Get Assignments By Task Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/AssignmentController?task=getAllAssignmentByTaskId&id=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"AssignmentController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getAllAssignmentByTaskId"
+						},
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ASS Delete Assignments By Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/AssignmentController?task=deleteAssignmentById&id=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"AssignmentController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "deleteAssignmentById"
+						},
+						{
+							"key": "id",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ASS Delete All Assignments By Employee Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/AssignmentController?task=deleteAllAssignmentByEmployeeId&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"AssignmentController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "deleteAllAssignmentByEmployeeId"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ASS Delete All Assignments By Task Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/AssignmentController?task=deleteAllAssignmentByTaskId&id=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"AssignmentController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "deleteAllAssignmentByTaskId"
+						},
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SPRINT Get Sprint By ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/SprintController?task=getSprintById&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"SprintController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getSprintById"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SPRINT Create New sprint",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/SprintController?task=createNewSprint&id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"SprintController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "createNewSprint"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SPRINT Get All Sprints By Project Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/SprintController?task=getAllSprintByProjectId&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"SprintController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getAllSprintByProjectId"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SPRINT Update isFinished By Sprint Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/SprintController?task=updateSprintFinishedById&id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"SprintController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "updateSprintFinishedById"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SPRINT Delete Sprint By Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/SprintController?task=deleteSprintById&id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"SprintController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "deleteSprintById"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SPRINT Delete All Sprint By Project Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/SprintController?task=deleteAllSprintByProjectId&id=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"SprintController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "deleteAllSprintByProjectId"
+						},
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EMPLOYEE Get All Employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/EmployeeController?task=getAllEmployees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"EmployeeController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getAllEmployees"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EMPLOYEE Get Employee By Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/EmployeeController?task=getEmployeeById&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"EmployeeController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getEmployeeById"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EMPLOYEE Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/EmployeeController?task=createNewEmployee&name=Kovács Jóska",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"EmployeeController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "createNewEmployee"
+						},
+						{
+							"key": "name",
+							"value": "Kovács Jóska"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EMPLOYEE Delete Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/EmployeeController?task=deleteEmployeeById&id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"EmployeeController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "deleteEmployeeById"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EMPLOYEE Get  Employee Statistics By Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/EmployeeController?task=getEmployeeStatistics&id=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"EmployeeController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getEmployeeStatistics"
+						},
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EMPLOYEE Update Employee Name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/EmployeeController?task=updateEmployeeNameById&id=2&name=Marky Mark",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"EmployeeController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "updateEmployeeNameById"
+						},
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "name",
+							"value": "Marky Mark"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TASK create task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/TaskController?task=createNewTask&title=Task W&description=Task_for_proj_C_sprint_6&sprintid=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"TaskController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "createNewTask"
+						},
+						{
+							"key": "title",
+							"value": "Task W"
+						},
+						{
+							"key": "description",
+							"value": "Task_for_proj_C_sprint_6"
+						},
+						{
+							"key": "sprintid",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TASK getAll  task by sprint id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/TaskController?task=getAllTasksBySprintId&id=19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"TaskController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getAllTasksBySprintId"
+						},
+						{
+							"key": "id",
+							"value": "19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TASK get task by id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/TaskController?task=getTaskById&id=17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"TaskController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "getTaskById"
+						},
+						{
+							"key": "id",
+							"value": "17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TASK update task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/TaskController?task=updateTaskById&id=23&title=Task Updated&description=Task_descr updated&position=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"TaskController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "updateTaskById"
+						},
+						{
+							"key": "id",
+							"value": "23"
+						},
+						{
+							"key": "title",
+							"value": "Task Updated"
+						},
+						{
+							"key": "description",
+							"value": "Task_descr updated"
+						},
+						{
+							"key": "position",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TASK delete task by id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/TaskController?task=deleteTaskById&id=17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"TaskController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "deleteTaskById"
+						},
+						{
+							"key": "id",
+							"value": "17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TASK delete  all task by Sprint id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/manual_scrum/TaskController?task=deleteAllTaskBySprintId&id=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"manual_scrum",
+						"TaskController"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "deleteAllTaskBySprintId"
+						},
+						{
+							"key": "id",
+							"value": "7"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "sprintid",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
